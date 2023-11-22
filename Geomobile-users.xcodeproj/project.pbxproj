@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A372AFAA2B0E34F800640FBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372AFA92B0E34F800640FBC /* AppDelegate.swift */; };
+		A372AFAC2B0E34F800640FBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372AFAB2B0E34F800640FBC /* SceneDelegate.swift */; };
+		A372AFAE2B0E34F800640FBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372AFAD2B0E34F800640FBC /* ViewController.swift */; };
+		A372AFB12B0E34F800640FBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A372AFAF2B0E34F800640FBC /* Main.storyboard */; };
+		A372AFB32B0E34F900640FBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A372AFB22B0E34F900640FBC /* Assets.xcassets */; };
+		A372AFB62B0E34F900640FBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A372AFB42B0E34F900640FBC /* LaunchScreen.storyboard */; };
+		A372AFC12B0E34F900640FBC /* Geomobile_usersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372AFC02B0E34F900640FBC /* Geomobile_usersTests.swift */; };
+		A372AFCB2B0E34F900640FBC /* Geomobile_usersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372AFCA2B0E34F900640FBC /* Geomobile_usersUITests.swift */; };
+		A372AFCD2B0E34F900640FBC /* Geomobile_usersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372AFCC2B0E34F900640FBC /* Geomobile_usersUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A372AFBD2B0E34F900640FBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A372AF9E2B0E34F800640FBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A372AFA52B0E34F800640FBC;
+			remoteInfo = "Geomobile-users";
+		};
+		A372AFC72B0E34F900640FBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A372AF9E2B0E34F800640FBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A372AFA52B0E34F800640FBC;
+			remoteInfo = "Geomobile-users";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A372AFA62B0E34F800640FBC /* Geomobile-users.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Geomobile-users.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A372AFA92B0E34F800640FBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A372AFAB2B0E34F800640FBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A372AFAD2B0E34F800640FBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A372AFB02B0E34F800640FBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A372AFB22B0E34F900640FBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A372AFB52B0E34F900640FBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A372AFB72B0E34F900640FBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A372AFBC2B0E34F900640FBC /* Geomobile-usersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Geomobile-usersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A372AFC02B0E34F900640FBC /* Geomobile_usersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geomobile_usersTests.swift; sourceTree = "<group>"; };
+		A372AFC62B0E34F900640FBC /* Geomobile-usersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Geomobile-usersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A372AFCA2B0E34F900640FBC /* Geomobile_usersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geomobile_usersUITests.swift; sourceTree = "<group>"; };
+		A372AFCC2B0E34F900640FBC /* Geomobile_usersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geomobile_usersUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A372AFA32B0E34F800640FBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A372AFB92B0E34F900640FBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A372AFC32B0E34F900640FBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A372AF9D2B0E34F800640FBC = {
+			isa = PBXGroup;
+			children = (
+				A372AFA82B0E34F800640FBC /* Geomobile-users */,
+				A372AFBF2B0E34F900640FBC /* Geomobile-usersTests */,
+				A372AFC92B0E34F900640FBC /* Geomobile-usersUITests */,
+				A372AFA72B0E34F800640FBC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A372AFA72B0E34F800640FBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A372AFA62B0E34F800640FBC /* Geomobile-users.app */,
+				A372AFBC2B0E34F900640FBC /* Geomobile-usersTests.xctest */,
+				A372AFC62B0E34F900640FBC /* Geomobile-usersUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A372AFA82B0E34F800640FBC /* Geomobile-users */ = {
+			isa = PBXGroup;
+			children = (
+				A372AFA92B0E34F800640FBC /* AppDelegate.swift */,
+				A372AFAB2B0E34F800640FBC /* SceneDelegate.swift */,
+				A372AFAD2B0E34F800640FBC /* ViewController.swift */,
+				A372AFAF2B0E34F800640FBC /* Main.storyboard */,
+				A372AFB22B0E34F900640FBC /* Assets.xcassets */,
+				A372AFB42B0E34F900640FBC /* LaunchScreen.storyboard */,
+				A372AFB72B0E34F900640FBC /* Info.plist */,
+			);
+			path = "Geomobile-users";
+			sourceTree = "<group>";
+		};
+		A372AFBF2B0E34F900640FBC /* Geomobile-usersTests */ = {
+			isa = PBXGroup;
+			children = (
+				A372AFC02B0E34F900640FBC /* Geomobile_usersTests.swift */,
+			);
+			path = "Geomobile-usersTests";
+			sourceTree = "<group>";
+		};
+		A372AFC92B0E34F900640FBC /* Geomobile-usersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A372AFCA2B0E34F900640FBC /* Geomobile_usersUITests.swift */,
+				A372AFCC2B0E34F900640FBC /* Geomobile_usersUITestsLaunchTests.swift */,
+			);
+			path = "Geomobile-usersUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A372AFA52B0E34F800640FBC /* Geomobile-users */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A372AFD02B0E34F900640FBC /* Build configuration list for PBXNativeTarget "Geomobile-users" */;
+			buildPhases = (
+				A372AFA22B0E34F800640FBC /* Sources */,
+				A372AFA32B0E34F800640FBC /* Frameworks */,
+				A372AFA42B0E34F800640FBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Geomobile-users";
+			productName = "Geomobile-users";
+			productReference = A372AFA62B0E34F800640FBC /* Geomobile-users.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A372AFBB2B0E34F900640FBC /* Geomobile-usersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A372AFD32B0E34F900640FBC /* Build configuration list for PBXNativeTarget "Geomobile-usersTests" */;
+			buildPhases = (
+				A372AFB82B0E34F900640FBC /* Sources */,
+				A372AFB92B0E34F900640FBC /* Frameworks */,
+				A372AFBA2B0E34F900640FBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A372AFBE2B0E34F900640FBC /* PBXTargetDependency */,
+			);
+			name = "Geomobile-usersTests";
+			productName = "Geomobile-usersTests";
+			productReference = A372AFBC2B0E34F900640FBC /* Geomobile-usersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A372AFC52B0E34F900640FBC /* Geomobile-usersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A372AFD62B0E34F900640FBC /* Build configuration list for PBXNativeTarget "Geomobile-usersUITests" */;
+			buildPhases = (
+				A372AFC22B0E34F900640FBC /* Sources */,
+				A372AFC32B0E34F900640FBC /* Frameworks */,
+				A372AFC42B0E34F900640FBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A372AFC82B0E34F900640FBC /* PBXTargetDependency */,
+			);
+			name = "Geomobile-usersUITests";
+			productName = "Geomobile-usersUITests";
+			productReference = A372AFC62B0E34F900640FBC /* Geomobile-usersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A372AF9E2B0E34F800640FBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A372AFA52B0E34F800640FBC = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					A372AFBB2B0E34F900640FBC = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = A372AFA52B0E34F800640FBC;
+					};
+					A372AFC52B0E34F900640FBC = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = A372AFA52B0E34F800640FBC;
+					};
+				};
+			};
+			buildConfigurationList = A372AFA12B0E34F800640FBC /* Build configuration list for PBXProject "Geomobile-users" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A372AF9D2B0E34F800640FBC;
+			productRefGroup = A372AFA72B0E34F800640FBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A372AFA52B0E34F800640FBC /* Geomobile-users */,
+				A372AFBB2B0E34F900640FBC /* Geomobile-usersTests */,
+				A372AFC52B0E34F900640FBC /* Geomobile-usersUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A372AFA42B0E34F800640FBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A372AFB62B0E34F900640FBC /* LaunchScreen.storyboard in Resources */,
+				A372AFB32B0E34F900640FBC /* Assets.xcassets in Resources */,
+				A372AFB12B0E34F800640FBC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A372AFBA2B0E34F900640FBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A372AFC42B0E34F900640FBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A372AFA22B0E34F800640FBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A372AFAE2B0E34F800640FBC /* ViewController.swift in Sources */,
+				A372AFAA2B0E34F800640FBC /* AppDelegate.swift in Sources */,
+				A372AFAC2B0E34F800640FBC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A372AFB82B0E34F900640FBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A372AFC12B0E34F900640FBC /* Geomobile_usersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A372AFC22B0E34F900640FBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A372AFCB2B0E34F900640FBC /* Geomobile_usersUITests.swift in Sources */,
+				A372AFCD2B0E34F900640FBC /* Geomobile_usersUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A372AFBE2B0E34F900640FBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A372AFA52B0E34F800640FBC /* Geomobile-users */;
+			targetProxy = A372AFBD2B0E34F900640FBC /* PBXContainerItemProxy */;
+		};
+		A372AFC82B0E34F900640FBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A372AFA52B0E34F800640FBC /* Geomobile-users */;
+			targetProxy = A372AFC72B0E34F900640FBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A372AFAF2B0E34F800640FBC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A372AFB02B0E34F800640FBC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A372AFB42B0E34F900640FBC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A372AFB52B0E34F900640FBC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A372AFCE2B0E34F900640FBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A372AFCF2B0E34F900640FBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A372AFD12B0E34F900640FBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24BKYC4SHJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Geomobile-users/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karolmajka.Geomobile-users";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A372AFD22B0E34F900640FBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24BKYC4SHJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Geomobile-users/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karolmajka.Geomobile-users";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A372AFD42B0E34F900640FBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24BKYC4SHJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karolmajka.Geomobile-usersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Geomobile-users.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Geomobile-users";
+			};
+			name = Debug;
+		};
+		A372AFD52B0E34F900640FBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24BKYC4SHJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karolmajka.Geomobile-usersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Geomobile-users.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Geomobile-users";
+			};
+			name = Release;
+		};
+		A372AFD72B0E34F900640FBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24BKYC4SHJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karolmajka.Geomobile-usersUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Geomobile-users";
+			};
+			name = Debug;
+		};
+		A372AFD82B0E34F900640FBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 24BKYC4SHJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karolmajka.Geomobile-usersUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Geomobile-users";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A372AFA12B0E34F800640FBC /* Build configuration list for PBXProject "Geomobile-users" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A372AFCE2B0E34F900640FBC /* Debug */,
+				A372AFCF2B0E34F900640FBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A372AFD02B0E34F900640FBC /* Build configuration list for PBXNativeTarget "Geomobile-users" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A372AFD12B0E34F900640FBC /* Debug */,
+				A372AFD22B0E34F900640FBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A372AFD32B0E34F900640FBC /* Build configuration list for PBXNativeTarget "Geomobile-usersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A372AFD42B0E34F900640FBC /* Debug */,
+				A372AFD52B0E34F900640FBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A372AFD62B0E34F900640FBC /* Build configuration list for PBXNativeTarget "Geomobile-usersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A372AFD72B0E34F900640FBC /* Debug */,
+				A372AFD82B0E34F900640FBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A372AF9E2B0E34F800640FBC /* Project object */;
+}
