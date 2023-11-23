@@ -1,0 +1,13 @@
+sourceryCommand: null
+Geomobile-usersTests:
+  sources:
+    include:
+    - ./Geomobile-users
+  output: ./Geomobile-usersTests/Mocks/Mock.generated.swift
+  targets:
+  - Geomobile-usersTests
+  testable:
+  - Geomobile_users
+  import:
+  - Foundation
+  - RxSwift

@@ -1,0 +1,5 @@
+strings:
+  - inputs: Geomobile-users/Resources/en.lproj/Localizable.strings
+    outputs:
+      - templateName: structured-swift5
+        output: Geomobile-users/SwiftGen/StringsGen.swift
