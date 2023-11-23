@@ -5,6 +5,7 @@
 //  Created by Karol Majka on 23/11/2023.
 //
 
+import Foundation
 import RxSwift
 import RxCocoa
 import RxRelay
@@ -58,6 +59,11 @@ private extension UsersListViewModel {
             .map { $0.map { UsersListCellViewModel(data: $0) } }
             .bind(to: output.view.cellViewModelsSubject)
             .disposed(by: disposeBag)
+
+        input.view.itemSelected
+            .compactMap { [weak self] in self?.data.value[safe: $0.row] }
+            .subscribe(output.coordinator.showDetailsSubject)
+            .disposed(by: disposeBag)
     }
 }
 
@@ -70,9 +76,9 @@ private extension UsersListViewModel {
             .subscribe(with: self, onSuccess: { (self, response) in
                 self.data.accept(response.data)
                 try? self.localCache.save(data: response.data)
-                self.output.view.errorMessageSubject.accept(nil)
+                self.output.view.errorMessageSubject.onNext(nil)
             }, onFailure: { (self, error) in
-                self.output.view.errorMessageSubject.accept(error.localizedDescription)
+                self.output.view.errorMessageSubject.onNext(error.localizedDescription)
                 let data = try? self.localCache.load()
                 self.data.accept(data ?? [])
             })
@@ -83,11 +89,12 @@ private extension UsersListViewModel {
 // MARK: - Input
 extension UsersListViewModel {
     struct Input {
-        let view: View = View()
+        let view = View()
 
         struct View {
             let fetchData = PublishSubject<Void>()
             let searchText = PublishSubject<String?>()
+            let itemSelected = PublishSubject<IndexPath>()
         }
     }
 }
@@ -95,15 +102,22 @@ extension UsersListViewModel {
 // MARK: - Output
 extension UsersListViewModel {
     struct Output {
-        let view: View = View()
+        let view = View()
+        let coordinator = Coordinator()
 
         struct View {
             let activityIndicator = ActivityIndicator()
             var cellViewModels: Driver<[CellViewModel]> { cellViewModelsSubject.asDriver(onErrorJustReturn: []) }
             var errorMessage: Driver<String?> { errorMessageSubject.asDriver(onErrorJustReturn: nil) }
 
-            fileprivate let cellViewModelsSubject = BehaviorRelay<[CellViewModel]>(value: [])
-            fileprivate let errorMessageSubject = BehaviorRelay<String?>(value: nil)
+            fileprivate let cellViewModelsSubject = BehaviorSubject<[CellViewModel]>(value: [])
+            fileprivate let errorMessageSubject = BehaviorSubject<String?>(value: nil)
+        }
+
+        struct Coordinator {
+            var showDetails: Driver<UsersListData> { showDetailsSubject.asDriver(onErrorDriveWith: .empty()) }
+
+            fileprivate let showDetailsSubject = PublishSubject<UsersListData>()
         }
     }
 }

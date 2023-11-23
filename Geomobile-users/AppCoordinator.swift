@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 final class AppCoordinator: Coordinator {
 
@@ -13,6 +15,8 @@ final class AppCoordinator: Coordinator {
     var presentation: CoordinatorPresentation {
         return dependencies.presentation
     }
+
+    private let disposeBag = DisposeBag()
 
     struct Dependencies {
         let presentation: CoordinatorPresentation
@@ -25,8 +29,20 @@ final class AppCoordinator: Coordinator {
 
     func start() {
         let viewModel = UsersListViewModel()
+        viewModel.output.coordinator.showDetails
+            .drive(with: self, onNext: { (self, data) in
+                self.showUserDetails(data: data)
+            })
+            .disposed(by: disposeBag)
+
         let viewController = UsersListViewController(viewModel: viewModel)
         let navigationController = UINavigationController(rootViewController: viewController)
         present(viewController: navigationController)
+    }
+
+    private func showUserDetails(data: UsersListData) {
+        let viewModel = UserDetailsViewModel(data: data)
+        let viewController = UserDetailsViewController(viewModel: viewModel)
+        rootNavigationController?.pushViewController(viewController, animated: true)
     }
 }

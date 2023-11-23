@@ -40,6 +40,13 @@ final class UsersListViewController: UIViewController {
         viewModel.input.view.fetchData.onNext(())
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if let indexPath = contentView.tableView.indexPathForSelectedRow {
+            contentView.tableView.deselectRow(at: indexPath, animated: true)
+        }
+    }
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         if contentView.alertBannerView.superview == nil {
@@ -71,6 +78,10 @@ final class UsersListViewController: UIViewController {
                     return UITableViewCell()
                 }
             }
+            .disposed(by: disposeBag)
+
+        contentView.tableView.rx.itemSelected
+            .bind(to: viewModel.input.view.itemSelected)
             .disposed(by: disposeBag)
 
         viewModel.output.view.activityIndicator
