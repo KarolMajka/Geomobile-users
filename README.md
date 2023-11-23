@@ -15,3 +15,6 @@ make help
 ---
 
 ## Project Objectives
+
+1. Project purpose is to download and store list of users.
+2. It stores list of users in UserDefaults, to in case of development continue local cache should be migrated to CoreData/Realm.
