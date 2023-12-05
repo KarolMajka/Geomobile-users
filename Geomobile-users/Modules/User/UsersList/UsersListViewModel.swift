@@ -17,6 +17,7 @@ final class UsersListViewModel {
     private let disposeBag = DisposeBag()
 
     private let data: BehaviorRelay<[UsersListData]> = .init(value: [])
+    private var filteredData: [UsersListData] = []
 
     private let service: UsersServiceProtocol
     private let searchFilter: UsersListSearchFilterProtocol
@@ -54,14 +55,16 @@ private extension UsersListViewModel {
             input.view.searchText.startWith(nil).distinctUntilChanged()
         )
             .map { [weak self] data, searchText in
-                self?.searchFilter.filterResults(data: data, searchText: searchText) ?? []
+                let filteredData = self?.searchFilter.filterResults(data: data, searchText: searchText) ?? []
+                self?.filteredData = filteredData
+                return filteredData
             }
             .map { $0.map { UsersListCellViewModel(data: $0) } }
             .bind(to: output.view.cellViewModelsSubject)
             .disposed(by: disposeBag)
 
         input.view.itemSelected
-            .compactMap { [weak self] in self?.data.value[safe: $0.row] }
+            .compactMap { [weak self] in self?.filteredData[safe: $0.row] }
             .subscribe(output.coordinator.showDetailsSubject)
             .disposed(by: disposeBag)
     }
